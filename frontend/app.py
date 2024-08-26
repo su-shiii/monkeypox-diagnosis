@@ -3,7 +3,7 @@ from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing import image
 import numpy as np
 import io
-import time  # Import the time module for adding delay
+import time 
 
 app = Flask(__name__)
 
@@ -40,7 +40,7 @@ def predict():
     prediction = model.predict(img_array)
     predicted_class = 'Monkeypox' if prediction[0] > 0.5 else 'Not Monkeypox'
     
-    # Pause for 1 second before showing result
+    # Pause for 1 second before showing result- this is for my own peace of mind tbh
     time.sleep(1)
     
     return render_template('result.html', prediction=predicted_class)
