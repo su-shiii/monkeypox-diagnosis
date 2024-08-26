@@ -1,0 +1,97 @@
+/* General Body Styling */
+body {
+    font-family: 'Montserrat Black', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Montserrat Black';
+    src: url('C:/Users/suhan/Downloads/montserrat-font/MontserratBlack-3zOvZ.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat Bold';
+    src: url('C:/Users/suhan/Downloads/montserrat-font/MontserratBold-DOWZd.ttf') format('truetype');
+}
+
+/* Header Styling */
+header {
+    background-color: #7db2b8;
+    color: darkblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-sizing: border-box; /* Ensure padding is included in width calculation */
+    font-weight: 700;
+}
+
+.logo {
+    height: auto; /* Ensure height adjusts based on width */
+    max-height: 50px; /* Limit height to prevent overflow */
+    width: auto; /* Allow width to adjust */
+}
+
+.help-link {
+    color: black;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: 'Roboto', Bold, sans-serif; /* Apply Montserrat Bold font */
+    margin-left: auto; /* Pushes the link to the right */
+    padding-right: 20px; /* Space between the text and the right side border */
+    box-sizing: border-box; /* Ensure padding is included in width calculation */
+}
+
+/* Main Content Styling */
+main {
+    display: flex;
+    height: calc(100vh - 80px); /* Full height minus header */
+    margin-top: 80px; /* Add margin to prevent overlap with header */
+}
+
+.left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 5%;
+    color: #3e61c9;
+}
+
+.doc-image {
+    max-width: 100%; /* Ensure it scales within its container */
+    height: auto;
+}
+
+h1 {
+    font-size: 60px; /* Adjusted font size */
+    color: #3e61c9; /* Text color */
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #3e61c9; /* Button color */
+    color: white;
+    text-decoration: none;
+    border-radius: 20px; /* Rounded corners */
+    font-size: 20px;
+    font-family: 'Montserrat Bold', Arial, sans-serif; /* Button text font */
+    margin-top: 20px; /* Maintain spacing between text and button */
+    width: auto; /* Button only as wide as the text */
+    text-align: center;
+}

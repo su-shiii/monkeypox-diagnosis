@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <img src="{{ url_for('static', filename='AGM.png') }}" alt="Logo" class="logo">
+        <a href="{{ url_for('help') }}" class="help-link">Help</a>
+    </header>
+    <main>
+        <div class="left">
+            <img src="{{ url_for('static', filename='doc.png') }}" alt="Doctor" class="doc-image">
+        </div>
+        <div class="right">
+            <h1>Easy Diagnosis,<br>Anywhere</h1>
+            <a href="{{ url_for('index') }}" class="btn">Get Started</a>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700");
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  font-family: Roboto, sans-serif;
+  background: white;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 0.5em;
+}
+
+h6 {
+  font-size: 1em;
+  color: #666;
+  margin-bottom: 2em;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #7db2b8;
+  border-radius: 10px;
+  box-shadow: 0 1.7px 1.4px rgba(0, 0, 0, 0.02),
+    0 4px 3.3px rgba(0, 0, 0, 0.028), 0 7.5px 6.3px rgba(0, 0, 0, 0.035),
+    0 13.4px 11.2px rgba(0, 0, 0, 0.042), 0 25.1px 20.9px rgba(0, 0, 0, 0.05),
+    0 60px 50px rgba(0, 0, 0, 0.07);
+  padding: 2em;
+  max-width: 500px;
+  width: 100%;
+}
+
+input[type="file"] {
+  margin-bottom: 1em;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1em;
+  background-color: white;
+  color: #333;
+}
+
+button {
+  padding: 15px 30px;
+  font-size: 1em;
+  color: white;
+  background-color: #3e61c9;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #3399d4;
+}

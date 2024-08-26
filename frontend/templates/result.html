@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='result.css') }}">
+</head>
+<body>
+    <h1>Your Results:</h1>
+    {% if prediction == 'Monkeypox' %}
+        <h3>Result: Positive</h3>
+        <p>Your results indicate the presence of monkeypox. Please contact a healthcare professional immediately for further guidance and support.</p>
+        <p>In the meantime, to help prevent the spread of the virus, please avoid close contact with others and stay at home until you receive further instructions from your healthcare provider.</p>
+    {% elif prediction == 'Not Monkeypox' %}
+        <h3>Result: Negative</h3>
+        <p>Your results appear to be free of monkeypox. However, it's important to continue practicing good hygiene and be mindful of any symptoms that may arise.</p>
+        <p>If you experience any unusual symptoms or have concerns, please consult a healthcare professional for further evaluation.</p>
+    {% else %}
+        <p>Unable to determine the result. Please try again or contact support for assistance.</p>
+    {% endif %}
+    <a href="{{ url_for('index') }}" class="btn">Upload Another Image</a>
+</body>
+</html>
